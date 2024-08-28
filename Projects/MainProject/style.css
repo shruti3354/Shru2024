@@ -1,0 +1,210 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    --color1:#0faeed;
+    
+}
+.body{
+    height: 100%;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background: url(./underwater.jpg) ;
+    background-size: cover;
+    background-position: center;
+    
+    position: relative;
+    overflow: hidden;
+    
+}
+
+
+.nav{
+    width:85%;
+    height: 15%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 100px;
+    cursor: pointer;
+}
+header{
+   
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin-right: 10px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+a:hover{
+    color:var(--color1)
+}
+section{
+    padding: 50px 150px;
+}
+#about h2{
+    text-align: center;
+}
+#about-sec{
+       display: flex;
+}
+#about-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 30px;
+    font-size: 24px;
+}
+#about-image{
+    width: 300px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+button{
+    color: aliceblue;
+    padding: 10px 25px;
+    border: 1px solid #fff;
+    background: transparent;
+    border-radius: 20px;
+    outline: none;
+}
+.content{
+    color: azure;
+    position: absolute;
+    top:50%;
+    left:8%;
+    transform: translateY(-50%);
+    z-index:2;
+}
+h1{
+    font-size: 80px;
+    margin: 10px 0 30px;
+    line-height: 80px;
+}
+.bubbles img{
+
+    width: 50px;
+    border-radius: 25px;
+    animation: bubble 7s linear infinite;
+    
+
+}
+.bubbles{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -70px;
+    
+}
+@keyframes bubble{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+        
+        opacity: 1;
+    }
+
+    70%{
+        
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+}
+.bubbles img:nth-child(1){
+    animation-delay: 2s;
+    width: 25px;
+}
+.bubbles img:nth-child(2){
+    animation-delay: 1s;
+}
+.bubbles img:nth-child(3){
+    animation-delay: 5s;
+    width: 25px;
+}
+.bubbles img:nth-child(4){
+    animation-delay: 4s;
+}
+.bubbles img:nth-child(5){
+    animation-delay: 6s;
+    width: 20px;
+}
+.bubbles img:nth-child(6){
+    animation-delay: 4s;
+    width: 20px;
+}
+.bubbles img:nth-child(7){
+    animation-delay: 2s;
+    width: 35px;
+}
+
+.fish img{
+    position: absolute;
+    border-radius: 1500px;
+    bottom: 100px;
+    height: 100px;
+    animation: i2 8s linear infinite;
+    left: -50px;
+    
+    
+
+}
+@keyframes i2{
+    0%{
+        transform: translateX(0);
+    }
+    
+    100%{
+        transform: translateX(100vw);
+    }
+
+}
+
+
+
+@media (max-width:360px) {
+    header{
+        flex-direction: column;
+    }
+} 

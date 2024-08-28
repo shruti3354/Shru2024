@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+}
+
+
+.a{
+    background-color: blue;
+    height: 50px;
+    width: 50px;
+    margin: 20px;
+    
+
+}
+
+div+p::first-letter{
+    color: blue;
+    font-size: 25px;
+}
+
+input::placeholder{
+    color: aquamarine;
+}
+.main div:nth-of-type(4)
+{
+    background-color: brown;
+}

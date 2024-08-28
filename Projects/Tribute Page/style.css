@@ -1,0 +1,45 @@
+img
+{
+    height: 250px;
+    display: inline-block;
+    box-sizing: border-box;
+    padding-left: 600px;
+    
+    align-items: center;
+
+
+
+}
+
+
+#yy
+{
+    text-align:center;
+    font-size: medium;
+    font-weight: 800;
+}
+
+
+
+
+.container h1
+{
+    font-size: 40px;
+
+}
+.container p
+{
+  font-size: 20px;
+}
+
+
+#title
+{
+    text-align: center;
+    font-size: 7vh;
+}
+body
+{
+    background-color: hsla(124, 36%, 38%, 0.4);
+    padding: 20px;
+}

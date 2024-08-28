@@ -1,0 +1,39 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.main{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap: 20px;
+    padding-top: 200px;
+}
+
+.card{
+    background: red;
+    height: 100px;
+    width: 100px;
+    gap: 20px;
+}
+.rotate {
+    animation: rotate 1s linear infinite;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
