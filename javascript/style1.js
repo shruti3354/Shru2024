@@ -1,4 +1,4 @@
-console.log(document)
+
 
 /*str="js is very easy"
 console.log(str)
@@ -42,7 +42,7 @@ console.log(str)
 */
 
 
-const rotateBtn = document.getElementById('rotate');
+/*const rotateBtn = document.getElementById('rotate');
 const cards = document.getElementsByClassName('card');
 
 rotateBtn.addEventListener("click", rotate);
@@ -60,4 +60,16 @@ function rotate() {
 function change(){
     let color='#'+Math.round(Math.random()*100000000).toString(16)
     document.body.style.backgroundColor=color
-}
+}*/
+
+
+const person = {
+    firstName: 'John',
+    lastName: 'Doe',
+    age: 30,
+    sayHello: function() {
+    console.log('Hello!');
+    }
+   };
+
+   
